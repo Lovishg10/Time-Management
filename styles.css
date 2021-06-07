@@ -1,0 +1,208 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.greet
+{
+    position: relative;
+}
+section
+{
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+section.dark
+{
+    background-color: #161623;
+}
+
+section::before
+{
+    content: '';
+    position: fixed;
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(#f3f5f5, #9c27be);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+section.dark::before
+{
+    background: linear-gradient(#ffc107, #e91e63);
+}
+
+section::after
+{
+    content: '';
+    position: fixed;
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(#ff2d71, rgba(255, 40, 113, 0.2));
+    border-radius: 50%;
+    top: 70%;
+    right: 0;
+}
+
+section.dark::after
+{
+    background: linear-gradient(#2196f3, #31ff38);
+}
+
+
+.toggle
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.far
+{
+    color: #161623;
+}
+
+.dark .far
+{
+    color: #fff;
+}
+.toggle::before
+{
+    content: '';
+    color: #fff
+}
+.dark .toggle
+{
+    background-color: #161623;
+}
+
+.greet
+{
+    text-align: center;
+}
+
+.dark .greet
+{
+    color: #fef;
+}
+
+.todo, .progress, .done
+{
+    height: clamp(100px, 15%, 200px);
+    width: clamp(200px, 30%, 400px);
+    margin: 1rem;
+    background-color: #0e5f7338;
+    text-align: center;
+    border-radius: .5rem;
+    border: .4rem solid #aaa;
+    color: rgb(130,157,205);
+    margin: 3rem auto;
+    z-index: 1;
+    position: relative;
+}
+
+.item
+{
+    backface-visibility: blur(10px);
+    background-color: #0e5f7338;
+    color: #eee;
+    width: 95%;
+    margin: .5rem auto;
+    position: relative;
+}
+h3
+{
+    color: #fff;
+}
+
+.fa-ellipsis-v
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.clear
+{
+    color: red;
+    border: 2px solid red;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.createStats
+{
+    display: grid;
+    place-items: center;
+}
+
+
+.btn
+{
+    font-size: 1rem;
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 2px solid hsl(120, 40%, 8%);
+    background-color: #2b3a4a;
+    color: #aaa;
+}
+
+.stats
+{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+
+}
+table
+{
+    width: 90%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+    background-color: rgba(85,81,115,0.161);
+}
+
+table, tr, td, th
+{
+    border: 2px solid #aaa;
+}
+
+td
+{
+    padding: .5rem 1rem;
+}
+.btn:hover
+{
+    color: #2b3a4a;
+    background-color: #aaa;
+}
+
+
+.dark table
+{
+    color: #fff;
+}

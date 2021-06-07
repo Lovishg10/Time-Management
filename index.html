@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main">
+        <div class="toggle">
+            <i class="far fa-moon icon"></i>
+        </div>
+        <div class="greet">
+            <span id="greets"></span>
+            <span id="name"></span>
+        </div>
+        <div class="todo">
+            <h3>TODO</h3>
+            <div class="create" onclick="createTask()">
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+        <div class="progress">
+            <h3>In Progress</h3>
+        </div>
+
+        <div class="done">
+            <h3>Done</h3>
+            <div class="clear">
+                Clear
+            </div>
+        </div>
+        <div class="stats">
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Started</th>
+                    <th>Ended</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
